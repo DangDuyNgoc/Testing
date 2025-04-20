@@ -1,0 +1,49 @@
+.list-format {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid #cacaca;
+  font-size: 14px;
+}
+
+.list-format.title {
+  background-color: #f9f9f9;
+}
+
+.list-format img {
+  width: 50px;
+}
+
+.action-product {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  color: white;
+  height: 30px;
+  padding: 6px;
+}
+
+.btn-update {
+  background-color: #28a745;
+  margin-right: 8px;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+  .list-format {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .list-format.title {
+    display: none;
+  }
+}
